@@ -15,8 +15,8 @@ import (
 	"google.golang.org/grpc/credentials"
 	"google.golang.org/grpc/reflection"
 
-	"github.com/dhrp/grpc-rest-go-example/certificates"
-	pb "github.com/dhrp/grpc-rest-go-example/echo-proto"
+	"github.com/yjst2012/my-grpc-rest-go-test/certificates"
+	pb "github.com/yjst2012/my-grpc-rest-go-test/echo-proto"
 )
 
 // join the two constants for convenience
