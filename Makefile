@@ -10,7 +10,9 @@ BUILD=`git rev-parse HEAD`
 
 
 build:
+	cd server && go get -t ./...
 	go build -o ${BINARY} server/*.go
+	cd client && go get -t ./...
 	go build -o ${CLIENT_BINARY} client/*.go
 
 
