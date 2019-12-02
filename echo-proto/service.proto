@@ -12,12 +12,18 @@ service EchoService {
     option (google.api.http) = {
       get: "/v1/hello"
     };
+    option (grpc.gateway.protoc_gen_swagger.options.openapiv2_operation) = {
+        description: "Get test"
+    };
   }
 
   rpc Echo(EchoMessage) returns (EchoMessage) {
     option (google.api.http) = {
       post: "/v1/echo"
       body: "*"
+    };
+    option (grpc.gateway.protoc_gen_swagger.options.openapiv2_operation) = {
+        description: "Set test"
     };
   }
 }
