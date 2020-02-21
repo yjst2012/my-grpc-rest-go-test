@@ -2,7 +2,7 @@ BINARY=gserver
 CLIENT_BINARY=gclient
 
 VERSION=1.0.0
-BUILD=`git rev-parse HEAD`
+BUILD="$(shell git describe --abbrev=8 --dirty --always --tags)"
 
 # ToDo: set verions stuffs in files
 # Setup the -ldflags option for go build here, interpolate the variable values
